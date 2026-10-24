@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SPORTZONE — սպորտային նորություններ, ֆուտբոլ, հոկեյ, բասկետբոլ և հայկական սպորտ։">
+  <title>SPORTZONE | Սպորտային նորություններ</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Armenian:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="top-line">
+    <div class="container top-inner">
+      <span>SPORTZONE / ՍՊՈՐՏԻ ԱՇԽԱՐՀԸ</span>
+      <span id="currentDate"></span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo" aria-label="SPORTZONE գլխավոր էջ">
+        
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Բացել մենյուն" aria-expanded="false">☰</button>
+
+      <nav class="navigation" id="navigation">
+        <a href="#home" class="nav-link active">Գլխավոր</a>
+        <a href="#news" class="nav-link">Նորություններ</a>
+        <a href="#news" class="nav-link" data-nav-category="Ֆուտբոլ">Ֆուտբոլ</a>
+        <a href="#news" class="nav-link" data-nav-category="Բասկետբոլ">Բասկետբոլ</a>
+        <a href="#news" class="nav-link" data-nav-category="Հոկեյ">Հոկեյ</a>
+        <a href="#news" class="nav-link" data-nav-category="Այլ սպորտ">Այլ սպորտ</a>
+      </nav>
+
+      <a href="#news" class="header-button">Կարդալ նորությունները ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="live-label">
+          <span class="live-dot"></span>
+          ՍՊՈՐՏԱՅԻՆ ԱՇԽԱՐՀ
+        </div>
+
+        <p class="eyebrow">ՔՈ ՍՊՈՐՏԱՅԻՆ ՀԱՐԹԱԿԸ</p>
+
+        <h1>ԽԱՂԸ ՍԿՍՎՈՒՄ Է<br>
+          <span>ԱՅՍՏԵՂ։</span>
+        </h1>
+
+        <p class="hero-description">
+          Ամենակարևոր սպորտային իրադարձությունները,
+          մարզիկների պատմություններն ու հաղթանակները՝ մեկ վայրում։
+        </p>
+
+        <div class="hero-actions">
+          <a href="#news" class="btn btn-primary">Բացահայտել նորությունները ↗</a>
+          <a href="#sports" class="btn btn-outline">Սպորտի բաժիններ</a>
+        </div>
+
+        <div class="hero-bottom">
+          <span>⚡ ԱՐԱԳ · ՀՍՏԱԿ · ՍՊՈՐՏԱՅԻՆ</span>
+          <span>01 / SPORTZONE</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="sports-section" id="sports">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow red-text">ԸՆՏՐԻՐ ՔՈ ՍՊՈՐՏԸ</p>
+            <h2>ՍՊՈՐՏԻ ԲԱԺԻՆՆԵՐ</h2>
+          </div>
+          <p class="section-note">Մեկ հարթակ։ Անսահման սպորտային իրադարձություններ։</p>
+        </div>
+
+        <div class="sports-grid">
+          <button class="sport-card" data-category="Ֆուտբոլ">
+            <span class="sport-icon">⚽</span>
+            <span><strong>Ֆուտբոլ</strong><small>Football</small></span>
+            <span class="sport-arrow">↗</span>
+          </button>
+
+          <button class="sport-card" data-category="Հոկեյ">
+            <span class="sport-icon">🏒</span>
+            <span><strong>Հոկեյ</strong><small>Hockey</small></span>
+            <span class="sport-arrow">↗</span>
+          </button>
+
+          <button class="sport-card" data-category="Բասկետբոլ">
+            <span class="sport-icon">🏀</span>
+            <span><strong>Բասկետբոլ</strong><small>Basketball</small></span>
+            <span class="sport-arrow">↗</span>
+          </button>
+
+          <button class="sport-card" data-category="Վազք">
+            <span class="sport-icon">🏃</span>
+            <span><strong>Վազք</strong><small>Running</small></span>
+            <span class="sport-arrow">↗</span>
+          </button>
+
+          <button class="sport-card" data-category="Ըմբշամարտ">
+            <span class="sport-icon">🤼</span>
+            <span><strong>Ըմբշամարտ</strong><small>Wrestling</small></span>
+            <span class="sport-arrow">↗</span>
+          </button>
+
+          <button class="sport-card" data-category="Ծանրամարտ">
+            <span class="sport-icon">🏋️</span>
+            <span><strong>Ծանրամարտ</strong><small>Weightlifting</small></span>
+            <span class="sport-arrow">↗</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-section" id="news">
+      <div class="container">
+        <div class="section-heading news-heading">
+          <div>
+            <p class="eyebrow red-text">ՄԻ ԲԱՑ ԹՈՂՆԻՐ ՈՉԻՆՉ</p>
+            <h2>ՎԵՐՋԻՆ ՆՈՐՈՒԹՅՈՒՆՆԵՐ</h2>
+          </div>
+
+          <label class="search-box">
+            <span>⌕</span>
+            <input id="searchInput" type="search"
+              placeholder="Որոնել նորություններ..." aria-label="Որոնել նորություններ">
+          </label>
+        </div>
+
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-btn active" data-category="Բոլորը">Բոլորը</button>
+          <button class="filter-btn" data-category="Ֆուտբոլ">⚽ Ֆուտբոլ</button>
+          <button class="filter-btn" data-category="Հոկեյ">🏒 Հոկեյ</button>
+          <button class="filter-btn" data-category="Բասկետբոլ">🏀 Բասկետբոլ</button>
+          <button class="filter-btn" data-category="Վազք">🏃 Վազք</button>
+          <button class="filter-btn" data-category="Ըմբշամարտ">🤼 Ըմբշամարտ</button>
+          <button class="filter-btn" data-category="Ծանրամարտ">🏋️ Ծանրամարտ</button>
+        </div>
+
+        <div class="news-grid" id="newsGrid" aria-live="polite"></div>
+
+        <p class="empty-state" id="emptyState" hidden>
+          Այս որոնմամբ նորություն չի գտնվել։
+        </p>
+
+        <div class="load-more-wrap">
+          <button class="btn btn-dark" id="loadMore">Դիտել բոլոր նորությունները ↓</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="container quote-content">
+        <span class="quote-mark">“</span>
+        <div>
+          <p class="eyebrow">ՀԱՂԹԱՆԱԿԸ ՍԿՍՎՈՒՄ Է ԿԱՄՔԻՑ</p>
+          <h2>ԱՐԴՅՈՒՆՔԸ՝ ԴԱՇՏՈՒՄ։<br><span>ԿԻՐՔԸ՝ ՄԵՐ ՄԵՋ։</span></h2>
+        </div>
+        <a href="#sports" class="btn btn-primary">Ընտրել սպորտը ↗</a>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="container newsletter">
+        <div>
+          <p class="eyebrow red-text">ՄՆԱ՛ ՏԵՂԵԿԱՑՎԱԾ</p>
+          <h2>ՍՊՈՐՏԸ՝ ՄԻՇՏ ՔԵԶ ՀԵՏ է։ </h2>
+          <p>Գրանցվիր՝ նորությունների մասին տեղեկություններ ստանալու համար։</p>
+        </div>
+
+        <form class="newsletter-form" id="newsletterForm">
+          <label class="sr-only" for="emailInput">Էլեկտրոնային փոստ</label>
+          <input id="emailInput" type="email" placeholder="Քո էլ․ փոստը"
+            autocomplete="email" required>
+          <button class="btn btn-primary" type="submit">Գրանցվել ↗</button>
+          <p id="newsletterMessage" class="newsletter-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <a href="#home" class="logo footer-logo">
+       
+      </a>
+
+      <p>Քո ամենօրյա կապը սպորտային աշխարհի հետ։</p>
+
+      <a href="#home" class="back-top">ՎԵՐԵՎ ↑</a>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> SPORTZONE. Առղողջ հոքի առողջ մարմնում</span>
+      <span>Սպորտը դա  ապրելակերպ է ♥</span>
+    </div>
+  </footer>
+</body>
+</html>
